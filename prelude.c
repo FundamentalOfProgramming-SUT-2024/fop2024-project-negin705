@@ -160,13 +160,29 @@ int main() {
     init_pair (3, COLOR_YELLOW, COLOR_BLACK);
     init_pair (4, 214, COLOR_BLACK);  //orange
     
-    start_game();
+    introduction();
+    //start_game();
 
     refresh(); 
     getch(); 
     endwin(); 
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//------------------------------------------
 void start_game() {
     make_rooms ();
     clean_the_map(level);
